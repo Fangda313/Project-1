@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="scroll-progress"></div>
+    <header id="header">
         <nav>
-            <div class="logo">StoryBee</div>
+            <div class="logo">
+                <span class="logo-icon">🐝</span>
+                <span>StoryBee</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#features">Features</a></li>
@@ -21,61 +25,76 @@
 
     <main>
         <section class="hero">
-            <h1>Children Learn Premium Knowledge Beautifully for Free</h1>
-            <p class="subtitle">A hive of 10,000+ knowledge points - beautifully illustrated</p>
-            <a href="https://www.storybee.space/" class="cta-button" target="_blank">Visit StoryBee.space</a>
+            <div class="hero-content fade-in-up">
+                <h1>Children Learn Premium Knowledge Beautifully for Free</h1>
+                <p class="subtitle">A hive of 10,000+ knowledge points - beautifully illustrated</p>
+                <a href="https://www.storybee.space/" class="cta-button pulse" target="_blank">Visit StoryBee.space</a>
+            </div>
+            <div class="floating-elements">
+                <div class="floating-bee">🐝</div>
+                <div class="floating-book">📚</div>
+                <div class="floating-star">⭐</div>
+            </div>
         </section>
 
-        <section id="about" class="section">
-            <h2>What is StoryBee?</h2>
+        <section id="about" class="section scroll-reveal">
+            <h2 class="section-title">What is StoryBee?</h2>
             <p>StoryBee is a free digital platform providing open access to a wide range of children's books. We nurture young minds with interactive, structured learning experiences designed to spark curiosity and build strong learning habits.</p>
             <p>From atoms to empires, supply chains to monetary policy, our artful picture books are specially designed for young learners. Each story introduces knowledge concepts, lighting up a new branch on the Knowledge Tree Map.</p>
         </section>
 
-        <section id="features" class="section features-grid">
-            <h2>Why StoryBee?</h2>
+        <section id="features" class="section features-grid scroll-reveal">
+            <h2 class="section-title">Why StoryBee?</h2>
             
-            <div class="feature">
+            <div class="feature slide-in-left">
+                <div class="feature-icon">📖</div>
                 <h3>1000+ Picture Books and Growing</h3>
                 <p>Our library spans different subjects appropriate for each learning level, including science, history, arts, geography, emotional learning, and many more.</p>
             </div>
 
-            <div class="feature">
+            <div class="feature slide-in-right">
+                <div class="feature-icon">🧠</div>
                 <h3>Built on Brain Science</h3>
                 <p>We use storytelling, dual coding theory, and inclusive illustration to help children learn deeply and remember joyfully. Harvard studies show 83% retention in visual memory tests.</p>
             </div>
 
-            <div class="feature">
+            <div class="feature slide-in-left">
+                <div class="feature-icon">🌍</div>
                 <h3>Free & Open to All</h3>
                 <p>Available for 195 countries in the world, StoryBee is used in homes and classrooms, with new stories added consistently.</p>
             </div>
 
-            <div class="feature">
+            <div class="feature slide-in-right">
+                <div class="feature-icon">🎓</div>
                 <h3>Curriculum Aligned</h3>
                 <p>Our books are aligned with trusted curriculum from around the world, thoughtfully designed to build clarity and confidence as children grow toward advanced programs like AP, IB, or A-levels.</p>
             </div>
 
-            <div class="feature">
+            <div class="feature slide-in-left">
+                <div class="feature-icon">👶</div>
                 <h3>Age-Appropriate Content</h3>
                 <p>Stories are gently paced and joyfully told, making complex ideas engaging and accessible for young minds from an early age.</p>
             </div>
 
-            <div class="feature">
+            <div class="feature slide-in-right">
+                <div class="feature-icon">💡</div>
                 <h3>Empowering Education</h3>
                 <p>By turning complex ideas into engaging, age-appropriate stories, we make learning meaningful, joyful, and empowering for young minds.</p>
             </div>
         </section>
 
-        <section id="collections" class="section">
-            <h2>Our Collections</h2>
+        <section id="collections" class="section scroll-reveal">
+            <h2 class="section-title">Our Collections</h2>
             
-            <div class="collection">
+            <div class="collection zoom-in">
+                <div class="collection-badge">K-3</div>
                 <h3>StoryBee's Open Access Library</h3>
                 <p><strong>Kindergarten to Grade 3</strong></p>
                 <p>1000+ original curriculum-based picture books. A free collection of beautifully illustrated picture books, designed to spark early curiosity and build strong learning habits. Aligned with trusted curriculum from around the world. The books are gentle, joyful, and paced for children.</p>
             </div>
 
-            <div class="collection">
+            <div class="collection zoom-in">
+                <div class="collection-badge">Grade 3+</div>
                 <h3>The Foundational Series</h3>
                 <p><strong>Grade 3+</strong></p>
                 <p>Essential ideas, beautifully told. From atoms to empires, supply chains to monetary policy, these artful picture books are specially designed for young learners. Each story introduces several knowledge concepts, lighting up a new branch on the Knowledge Tree Map.</p>
@@ -83,53 +102,56 @@
             </div>
         </section>
 
-        <section id="impact" class="section impact-section">
-            <h2>Voices from the Hive</h2>
+        <section id="impact" class="section impact-section scroll-reveal">
+            <h2 class="section-title">Voices from the Hive</h2>
             <p class="impact-intro">From classrooms in Kenya to kitchens in Canada, StoryBee is reaching hearts and minds around the world.</p>
             
             <div class="stats">
-                <div class="stat">
-                    <h3>190+</h3>
+                <div class="stat counter-animation">
+                    <h3 class="counter" data-target="190">0</h3>
                     <p>Countries Reached</p>
                 </div>
-                <div class="stat">
-                    <h3>1,000,000+</h3>
+                <div class="stat counter-animation">
+                    <h3 class="counter" data-target="1000000">0</h3>
                     <p>Pages Read by Children</p>
                 </div>
-                <div class="stat">
-                    <h3>10,000+</h3>
+                <div class="stat counter-animation">
+                    <h3 class="counter" data-target="10000">0</h3>
                     <p>Knowledge Concepts</p>
                 </div>
             </div>
 
             <div class="testimonials">
-                <div class="testimonial">
+                <div class="testimonial slide-in-bottom">
+                    <div class="quote-icon">"</div>
                     <p>"I use StoryBee in my classroom every week. My students love the books. In a world with scarce quality learning resources, StoryBee stands out."</p>
                     <p class="author">— Ms. Lu, Grade 1 teacher, China</p>
                 </div>
 
-                <div class="testimonial">
+                <div class="testimonial slide-in-bottom">
+                    <div class="quote-icon">"</div>
                     <p>"These books encouraged my daughter to ask questions. They sparked her curiosity and helped satisfy it."</p>
                     <p class="author">— Zoe, parent of a 5-year-old, Canada</p>
                 </div>
 
-                <div class="testimonial">
+                <div class="testimonial slide-in-bottom">
+                    <div class="quote-icon">"</div>
                     <p>"What impressed me is how systematically the books are structured. The stories align beautifully with school curricula across the world. The topics cover many different aspects of knowledge, yet still feel playful and alive."</p>
                     <p class="author">— Dr. Xiang, physician, Canada</p>
                 </div>
             </div>
         </section>
 
-        <section class="section mission-section">
-            <h2>Our Mission</h2>
+        <section class="section mission-section scroll-reveal">
+            <h2 class="section-title">Our Mission</h2>
             <p>We envision a world where every child has the opportunity to understand complex ideas from an early age and carry that confidence throughout their lives.</p>
             <p>At StoryBee, every design, every detail, every element is part of a larger effort to make learning beautiful, gentle, and joyful for children around the world.</p>
         </section>
 
-        <section class="section cta-section">
-            <h2>Start Your Learning Journey Today</h2>
+        <section class="section cta-section scroll-reveal">
+            <h2 class="section-title">Start Your Learning Journey Today</h2>
             <p>Join thousands of families and classrooms worldwide who are discovering the joy of learning with StoryBee.</p>
-            <a href="https://www.storybee.space/" class="cta-button" target="_blank">Explore StoryBee Library</a>
+            <a href="https://www.storybee.space/" class="cta-button pulse" target="_blank">Explore StoryBee Library</a>
         </section>
     </main>
 
@@ -139,5 +161,7 @@
             <p>Visit the official site: <a href="https://www.storybee.space/" target="_blank">storybee.space</a></p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
