@@ -98,22 +98,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Parallax Effect for Hero Section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const heroContent = document.querySelector('.hero-content');
-    const floatingElements = document.querySelector('.floating-elements');
-    
-    if (heroContent && scrolled < window.innerHeight) {
-        heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
-        heroContent.style.opacity = 1 - (scrolled / 600);
-    }
-    
-    if (floatingElements && scrolled < window.innerHeight) {
-        floatingElements.style.transform = `translateY(${scrolled * 0.3}px)`;
-    }
-});
-
 // Add Hover Effect to Features
 document.querySelectorAll('.feature').forEach((feature, index) => {
     feature.style.transitionDelay = `${index * 0.1}s`;

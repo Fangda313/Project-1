@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StoryBee - Accessible Learning for All</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
     <div class="scroll-progress"></div>
@@ -25,15 +26,11 @@
 
     <main>
         <section class="hero">
+            <canvas id="hero-canvas"></canvas>
             <div class="hero-content fade-in-up">
                 <h1>Children Learn Premium Knowledge Beautifully for Free</h1>
                 <p class="subtitle">A hive of 10,000+ knowledge points - beautifully illustrated</p>
                 <a href="https://www.storybee.space/" class="cta-button pulse" target="_blank">Visit StoryBee.space</a>
-            </div>
-            <div class="floating-elements">
-                <div class="floating-bee">🐝</div>
-                <div class="floating-book">📚</div>
-                <div class="floating-star">⭐</div>
             </div>
         </section>
 
@@ -162,6 +159,7 @@
         </div>
     </footer>
 
+    <script src="hero-3d.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
